@@ -1,0 +1,11 @@
+.card {
+  margin: 10px 2%!important;
+  width: 100%;
+  border-bottom: 2px solid rgba(4, 128, 145, 0.699);
+  box-shadow:0 1rem 3rem rgba(0,0,0,.175)!important
+}
+
+.justify_content_between {
+  -ms-flex-pack: justify!important;
+  justify-content: space-between!important
+}
