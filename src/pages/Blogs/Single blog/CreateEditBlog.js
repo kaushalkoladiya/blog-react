@@ -74,7 +74,7 @@ class CreateEditBlog extends Component {
         }
         return res.json();
       })
-      .then(({ blog }) => {
+      .then(({ showBlog: { blog } }) => {
         this.setState({
           blog: {
             title: {
