@@ -66,6 +66,7 @@ class CreateEditBlog extends Component {
         'Content-Type': 'application/json',
         'Authorization': `${this.props.token}`
       },
+      body: JSON.stringify(graphqlQuery)
     })
       .then(res => {
         if (res.status !== 200) {
