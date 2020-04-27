@@ -12,6 +12,7 @@ const mobileNavigation = props => (
         mobile
         onChoose={props.onChooseItem}
         isAuth={props.isAuth}
+        userId={props.userId}
         onLogout={props.onLogout}
       />
     </ul>

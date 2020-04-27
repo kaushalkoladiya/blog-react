@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Input.css';
 
-const Login = props => {
+const input = props => {
   return (
     <div className="input">
       <label htmlFor={props.id}>{props.label}</label>
@@ -12,7 +12,7 @@ const Login = props => {
           props.touched ? 'touched' : 'untouched'
         ].join(' ')}
         onBlur={props.onBlur}
-        onChange={e => props.onChange(props.id, e.target.value, e.target.files)}
+        onChange={e => props.onChange(props.id, e.target.value)}
         value={props.value}
         id={props.id}
         type={props.type}
@@ -23,4 +23,4 @@ const Login = props => {
   );
 }
 
-export default Login;
+export default input;

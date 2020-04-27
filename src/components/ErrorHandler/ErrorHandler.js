@@ -8,7 +8,7 @@ const errorHandler = props => (
     {props.error && <Backdrop onClick={props.onHandle} />}
     {props.error && (
       <Modal
-        title="An Error Occurred"
+        title="Notice"
         onCancelModal={props.onHandle}
         onAcceptModal={props.onHandle}
         acceptEnabled

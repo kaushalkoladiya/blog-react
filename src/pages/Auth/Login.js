@@ -74,6 +74,7 @@ class Login extends Component {
             type="email"
             required={required}
             control="input"
+            placeholder="Your E-Mail"
             onChange={this.inputChangeHandler}
             onBlur={this.inputBlurHandler.bind(this, 'email')}
             value={this.state.loginForm['email'].value}
@@ -84,6 +85,7 @@ class Login extends Component {
             id="password"
             label="Your Password"
             type="password"
+            placeholder="Your Password"
             required={required}
             control="input"
             onChange={this.inputChangeHandler}
