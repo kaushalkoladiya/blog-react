@@ -275,7 +275,7 @@ class CreateEditBlog extends Component {
                 value={this.state.blog.subtitle.value}
                 touch={this.state.blog.subtitle.touch}
                 valid={this.state.blog.subtitle.valid}
-                placeholder="Write Blog's titile in minimum 5 characters"
+                placeholder="Write Blog's subtitle in minimum 5 characters"
                 row={3}
                 id="subtitle"
                 label="SubTitle"
@@ -302,7 +302,7 @@ class CreateEditBlog extends Component {
                 value={this.state.blog.description.value}
                 touch={this.state.blog.description.touch}
                 valid={this.state.blog.description.valid}
-                placeholder="Write Blog's titile in minimum 5 characters"
+                placeholder="Write Blog's description in minimum 20 characters. You can use Markdown as well as HTML tags."
                 id="description"
                 rows="50"
                 label="Description"

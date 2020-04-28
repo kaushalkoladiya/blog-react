@@ -15,6 +15,7 @@ const textarea = props => {
         rows={props.rows}
         required={props.required}
         value={props.value}
+        placeholder={props.placeholder}
         onChange={e => props.onChange(props.id, e.target.value)}
         onBlur={props.onBlur}
       />

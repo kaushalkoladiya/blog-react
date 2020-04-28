@@ -113,8 +113,6 @@ class App extends Component {
           error: err
         });
       });
-
-    this.setState({ authLoading: false });
   }
 
   signupHandler = (e, signupData) => {
@@ -149,7 +147,12 @@ class App extends Component {
         }
 
         if (data.data) {
-          this.props.history.replace('/login');
+          this.loginHandler(e, {
+            loginForm: {
+              ...signupData.signupForm
+            }
+          })
+          // this.props.history.replace('/login');
         }
       })
       .catch(err => {
@@ -160,7 +163,6 @@ class App extends Component {
         });
       });
 
-    this.setState({ authLoading: false });
   }
 
   logoutHandler = () => {
